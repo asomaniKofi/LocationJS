@@ -1,0 +1,45 @@
+{
+    "newcastle-under-lyme":
+     {
+        "Bins":{
+           "BlackBin":["contents"],
+           "BlueBin":["contents"],
+           "BlueBag":["contents"]
+        },
+
+        "Collection Days":{
+            "BlackBin": "\/Date(1477263600000)\/",
+            "BlueBin": "\/Date(1477263600000)\/",
+            "BlueBag": "\/Date(1477263600000)\/"
+        },
+
+        "Occurence":{
+            "BlackBin":"Every 2 weeks",
+            "BlueBin":"Every 2 weeks",
+            "BlueBag": "Every 2 weeks"
+        }
+
+    },
+    "stoke-on-trent":
+     {
+        "Bins":{
+           "BlackBin":["contents"],
+           "BlueBin":["contents"],
+           "BlueBag":["contents"]
+        },
+
+        "Collection Days":{
+            "BlackBin": "\/Date(1477263600000)\/",
+            "BlueBin": "\/Date(1477263600000)\/",
+            "BlueBag": "\/Date(1477263600000)\/"
+        },
+
+        "Occurence":{
+            "BlackBin":"Every 2 weeks",
+            "BlueBin":"Every 2 weeks",
+            "BlueBag": "Every 2 weeks"
+        }
+
+    }
+    
+}

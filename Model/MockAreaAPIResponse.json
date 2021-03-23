@@ -1,0 +1,53 @@
+{
+    "": {
+        "Name": "",
+        "BinOne": {
+            "BinName": "Blue Bin",
+            "BinType": "Bin",
+            "BinDescription": "It’s the container for all your rinsed drinks cans, food tins, plastic bottles, pots, tubs and trays, and glass bottles and jars.",
+            "BinOccurence": 2,
+            "BinNextDate": "2021-03-24",
+            "BinCollectionWeekStart": "",
+            "BinCollectionWeekEnd": "",
+            "BinContents": [
+                "Contents"
+            ]
+        },
+        "BinTwo": {
+            "BinName": "Blue Bag",
+            "BinType": "Bag",
+            "BinDescription": "The blue bag is for all your paper and card",
+            "BinOccurence": 2,
+            "BinNextDate": "2021-03-24",
+            "BinCollectionWeekStart": "",
+            "BinCollectionWeekEnd": "",
+            "BinContents": [
+                "Contents"
+            ]
+        },
+        "BinThree": {
+            "BinName": "Black Bin",
+            "BinType": "Bin",
+            "BinDescription": "The household rubbish bin is for all the rubbish you have which cannot be recycled",
+            "BinOccurence": 2,
+            "BinNextDate": "2021-03-31",
+            "BinCollectionWeekStart": "",
+            "BinCollectionWeekEnd": "",
+            "BinContents": [
+                "Contents"
+            ]
+        },
+        "BinFour": {
+            "BinName": "Green Bin",
+            "BinType": "Bin",
+            "BinDescription": "Food waste bin",
+            "BinOccurence": 1,
+            "BinNextDate": "2021-03-24",
+            "BinCollectionWeekStart": "",
+            "BinCollectionWeekEnd": "",
+            "BinContents": [
+                "Contents"
+            ]
+        }
+    }
+}
