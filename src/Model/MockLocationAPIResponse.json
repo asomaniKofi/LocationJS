@@ -1,0 +1,10 @@
+[
+    {
+        "Name": "newcastle-under-lyme",
+        "Areas": [""]
+    },
+    {
+        "Name": "stoke-on-trent",
+        "Areas": ["fenton" ,"shelton", "etruria", "hanley", "stoke", "longton", "burslem", "tunstall", "biddulph", "kidsgrove", "talke", "audley", "alsager", "chesterton", "trentham", "meir", "cheadle", "leek", "blythe bridge"]
+    }
+]

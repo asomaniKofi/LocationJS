@@ -1,0 +1,33 @@
+{
+"Name":"Etruria",
+    "BinOne":{
+    "BinName":"Blue Bin",
+    "BinType":"Bin",
+    "BinDescription":"The Blue Bin for all your rinsed drinks cans, food tins, plastic bottles, pots, tubs and trays, and glass bottles and jars.",
+    "BinOccurence":{"$numberInt":"2"},
+    "BinNextDate":"2025-04-25",
+    "BinCollectionWeekStart":"",
+    "BinCollectionWeekEnd":"",
+    "BinContents":["metal","glass","plastic","paper","cardboard","card", "tetrapack"]
+},
+    "BinTwo":{
+        "BinName":"Brown Bin",
+        "BinType":"Bin",
+        "BinDescription":"The brown bin is for all back/front garden garbage (Grass, weeds, etc)",
+        "BinOccurence":{"$numberInt":"2"},
+        "BinNextDate":"2025-05-02",
+        "BinCollectionWeekStart":"",
+        "BinCollectionWeekEnd":"",
+        "BinContents":[]
+    },
+    "BinThree":{
+        "BinName":"Black Bin",
+        "BinType":"Bin",
+        "BinDescription":"The household rubbish bin is for all the rubbish you have which cannot be recycled and is p",
+        "BinOccurence":{"$numberInt":"2"},
+        "BinNextDate":"2021-03-23",
+        "BinCollectionWeekStart":"",
+        "BinCollectionWeekEnd":"",
+        "BinContents":["tetrapack"]
+    }
+}
