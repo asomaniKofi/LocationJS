@@ -21,15 +21,16 @@ const Location_1 = __importDefault(require("./Model/Location"));
 const AreaSeeds_1 = __importDefault(require("./Model/AreaSeeds"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
-const PORT = process.env.PORT || 4000;
-const NODE_ENV = process.env.NODE_ENV || 'development';
-const MONGO_URL = process.env.MONGO_URL || '';
+const PORT = process.env.PORT || 8000;
+const NODE_ENV = process.env.NODE_ENV || "development";
+const MONGO_URL = process.env.MONGO_URL || "";
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
-app.use((0, morgan_1.default)('tiny'));
-mongoose_1.default.connect(MONGO_URL)
-    .then(() => console.log('✅ Connected to MongoDB'))
-    .catch((err) => console.error('❌ MongoDB connection error:', err));
+app.use((0, morgan_1.default)("tiny"));
+mongoose_1.default
+    .connect(MONGO_URL)
+    .then(() => console.log("✅ Connected to MongoDB"))
+    .catch((err) => console.error("❌ MongoDB connection error:", err));
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).json({ error: { message: err.message } });
@@ -37,37 +38,42 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
     console.log(`🚀 Server running on port ${PORT} | Env: ${NODE_ENV}`);
 });
-app.get('/getLocation/?', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+app.get("/getLocation/?", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { location } = req.query;
     if (!location) {
-        return res.status(400).json({ error: "Missing or invalid 'location' parameter" });
+        return res
+            .status(400)
+            .json({ error: "Missing or invalid 'location' parameter" });
     }
     try {
-        const loc = yield Location_1.default.findOne({ Name: req.query.location });
+        const loc = yield Location_1.default.findOne({
+            Name: req.query.location,
+        });
         if (!loc) {
-            return res.status(404).json({ error: 'Location not found' });
+            return res.status(404).json({ error: "Location not found" });
         }
         return res.json(loc);
     }
     catch (err) {
-        return res.status(500).json({ error: 'Server error' });
+        return res.status(500).json({ error: "Server error" });
     }
 }));
-app.get('/getLocationArea/?', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+app.get("/getLocationArea/?", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { area } = req.query;
     if (!area) {
-        return res.status(400).json({ error: "Missing or invalid 'area' parameter" });
+        return res
+            .status(400)
+            .json({ error: "Missing or invalid 'area' parameter" });
     }
     try {
         const areaData = yield AreaSeeds_1.default.findOne({ Name: area });
         if (!areaData) {
-            return res.status(404).json({ error: 'Area not found' });
+            return res.status(404).json({ error: "Area not found" });
         }
-        ;
         return res.json(areaData);
     }
     catch (err) {
-        return res.status(500).json({ error: 'Server error' });
+        return res.status(500).json({ error: "Server error" });
     }
 }));
 exports.default = app;
